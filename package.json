@@ -1,0 +1,51 @@
+{
+  "name": "supabase-test-db-formatter",
+  "version": "1.0.0",
+  "description": "A prettier formatter for Supabase pgTAP test output with color-coded results",
+  "type": "module",
+  "main": "lib/formatter.js",
+  "bin": {
+    "supatest": "./bin/supabase-test-db-formatter.js"
+  },
+  "exports": {
+    ".": {
+      "import": "./lib/formatter.js"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "supabase",
+    "pgtap",
+    "testing",
+    "formatter",
+    "postgresql",
+    "database-testing"
+  ],
+  "author": "Angelos Tsiatsis <sns0reg@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sesto24/supabase-test-db-formatter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sesto24/supabase-test-db-formatter/issues"
+  },
+  "homepage": "https://github.com/sesto24/supabase-test-db-formatter#readme",
+  "dependencies": {
+    "chalk": "^4.1.2"
+  },
+  "peerDependencies": {
+    "supabase": ">=1.8.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "README.md",
+    "LICENSE"
+  ]
+}
